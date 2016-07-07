@@ -874,7 +874,7 @@ a {
   visibility: hidden;
 }
 .article img {
-  max-width: 600px;
+  max-width: 100%;
   height: auto;
   border: none;
   -webkit-box-shadow: 2px 2px 3px #aaa;
