@@ -18,11 +18,10 @@ define([], function () {
                 var html, li = "";
                 for (var i = begin; i < end && i < data.length; i++) {
                     li += '<li><div class="img-box">' +
-                        '<a class="img-bg" rel="example_group" href="https://o9xmh0goj.bkt.clouddn.com/' + data[i] + '?raw=true"></a>' +
+                        '<a class="img-bg" rel="example_group" href="https://o9xmh0goj.bkt.clouddn.com/' + data[i] + '?raw=true' +
                         '<img lazy-src="https://o9xmh0goj.bkt.clouddn.com/' + data[i] + '?raw=true" />' +
                         '</li>';
                 }
-
                 $(".img-box-ul").append(li);
                 $(".img-box-ul").lazyload();
                 $("a[rel=example_group]").fancybox();
